@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const presentYear = Number(prompt('input a present year'))
+        const birthYear = Number(prompt('input a birth year'))
+
+        function calcAge(presentYear, birthYear) {
+            const daysAge = Number((presentYear - birthYear) * 365)
+            if (daysAge < 10000) {
+                alert("you are young")
+            }
+            else {
+                alert("you are old")
+            }
+        }
+        calcAge(presentYear, birthYear)
+    </script>
+
+</body>
+
+</html>
